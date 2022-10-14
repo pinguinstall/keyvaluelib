@@ -1,0 +1,23 @@
+thing still missing or not well implemented.
+
+missing features:
+- table and kv entries with type void*, which just point to some data somewhere in the memory
+-- a print function must be provided for such things by the user
+-- a size_t entry must be introduced for the KV store to hold the size of the data
+-- the kvcolumn_t could be extended by a "size_t *datsizes" variable which hold all the sizes for
+   the data in a col
+
+- user specific printout of the table and kv-store, now the format is fixed
+- remove cols and rows from tables
+- finish key and entry lists, or remove them
+- for every access to the structures a linear search is performed, we could sort the keys and do
+divide and conquer to speed up the search
+
+- complete tests (make check)
+
+not well implemented:
+- well, dunno probably a lot ;-)
+
+
+If you wish to contribute, that's great! Just send me pull requests or drop me an email
+robin@robingeyer.de
